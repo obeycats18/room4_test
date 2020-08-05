@@ -1,0 +1,12 @@
+{
+  "name": "room4test",
+  "displayName": "room4test",
+  "expo": {
+    "name": "room4test",
+    "slug": "room4test",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
