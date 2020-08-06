@@ -1,10 +1,13 @@
 import { ScreenT, useNavigator } from "../hooks/useNavigator";
-import Home from "../screens/Home/container";
+import {Home, ArtistDetail} from "../screens";
 
 const screens: ScreenT[] = [
-    {name: 'Home', component: Home, options: {title: 'Главная'} }
+    {name: 'Home', component: Home, options: {title: 'Главная'} },
+    {name: 'ArtistDetail', component: ArtistDetail, options: {title: 'Исполнитель'} },
 ]
 
-export const HomeNavigator = () => {
+const HomeNavigator = () => {
     return useNavigator(screens)
 }
+
+export default HomeNavigator

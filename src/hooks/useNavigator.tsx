@@ -14,7 +14,7 @@ export const useNavigator = (screens: ScreenT[]) => {
     return (
         <Navigator>
             {screens.map( screen => (
-                <Screen name={screen.name} component={screen.component} options={screen.options}/>
+                <Screen key={screen.name} name={screen.name} component={screen.component} options={screen.options}/>
             ) )}
         </Navigator>
     )

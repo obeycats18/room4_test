@@ -1,21 +1,14 @@
 import React from 'react'
-import styled from 'styled-components/native'
 
-const View = styled.View`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-`
+import { TrackList } from '../../components'
+import { TrackT } from '../../@types/lastFM.types'
 
-const Text = styled.Text`
-  font-size: 24px;
-`
+type _HomePropsT = {
+  tracks: TrackT[]
+}
 
-export const Home: React.FC = () => {
-    return (
-        <View>
-            <Text>Home Page</Text>
-        </View>
-    )
+export const Home: React.FC<_HomePropsT> = ({tracks}) => {    
+
+    return <TrackList tracks={tracks}/>
 }
 
